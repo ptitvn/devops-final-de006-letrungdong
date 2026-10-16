@@ -34,7 +34,7 @@ COPY --from=build /workspace/build/libs/*.jar app.jar
 USER non-root
 
 
-EXPOSE 8080
+EXPOSE 8082
 
 # ENTRYPOINT dạng exec (mảng JSON)
 ENTRYPOINT ["java", "-jar", "app.jar"]
